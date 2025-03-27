@@ -1,17 +1,37 @@
 package main
 
 import (
-    "net/http"
+	"net/http"
 
-    "github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-    router := gin.Default()
+	// Carrega todos os templates da pasta "templates"
+	router := gin.Default()
+	router.LoadHTMLGlob("templates/*")
 
-    router.GET("/", func(c *gin.Context) {
-        c.String(http.StatusOK, "Hello, World! Bem-vindo ao projeto go-website-tutorial!")
-    })
+	// Rota para a página inicial com suporte a idiomas
+	router.GET("/", func(c *gin.Context) {
+		lang := c.Query("lang")
+		if lang == "" {
+			lang = "en" // inglês padrão
+		}
 
-    router.Run(":8080")
+		var templateName string
+		switch lang {
+		case "pt":
+			templateName = "index_pt.html"
+		case "es":
+			templateName = "index_es.html"
+		default:
+			templateName = "index_en.html"
+		}
+
+		c.HTML(http.StatusOK, templateName, gin.H{
+			"title": "go-website-tutorial",
+		})
+	})
+
+	router.Run(":8080")
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{.title}} - Paso 1 Completado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body { padding-top: 70px; }
+    .container { max-width: 900px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/?lang=es">{{.title}}</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#objetivo">Objetivo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#documentacion">Documentación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#paso1">Paso 1</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/?lang=en">English</a></li>
+          <li class="nav-item"><a class="nav-link" href="/?lang=pt">Português</a></li>
+          <li class="nav-item"><a class="nav-link" href="/?lang=es">Español</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="mb-4">
+      <h1 class="display-4">{{.title}}</h1>
+      <p class="lead">Un tutorial paso a paso para crear y publicar un sitio web multilingüe con Go (Golang) usando GitHub Pages gratuitamente.</p>
+      <p>Este sitio es open source. <a href="https://github.com/michelbr84/go-website-tutorial">Mejora esta página.</a></p>
+    </header>
+
+    <section id="objetivo" class="mb-5">
+      <h2>Objetivo del Proyecto</h2>
+      <p>El propósito es construir un sitio web con Go como un tutorial en 10 etapas, publicado gratuitamente en GitHub usando este mismo proyecto como ejemplo.</p>
+      <ol>
+        <li>Tutorial en 10 pasos sobre cómo crear y publicar un sitio web con Go.</li>
+        <li>Público objetivo: personas que hablan inglés, español o portugués.</li>
+        <li>Asistencia para definir o aplicar identidad visual.</li>
+        <li>Cada paso publicado y archivado por separado.</li>
+        <li>Se podrá ver el resultado de cada etapa en páginas específicas.</li>
+        <li>10 lanzamientos progresivos hasta el sitio completo.</li>
+        <li>Después del Paso 10, no habrá más actualizaciones inicialmente.</li>
+        <li>Sitio optimizado para motores de búsqueda (SEO).</li>
+        <li>No se necesita integración con otros sistemas.</li>
+        <li>El proyecto será totalmente gratuito, salvo el tiempo invertido.</li>
+      </ol>
+      <p>Esta primera etapa será archivada como definitiva. No se sobrescribirá. Las próximas etapas se agregarán como archivos y carpetas nuevas.</p>
+    </section>
+
+    <section id="documentacion" class="mb-5">
+      <h2>Documentación Inicial</h2>
+      <ul>
+        <li><strong>Cuenta GitHub:</strong> creada como <code>michelbr84</code>.</li>
+        <li><strong>Instalaciones:</strong> Git, Go (1.24.1), VS Code y extensiones (Go, GitHub, Live Server).</li>
+        <li><strong>Configuración:</strong> módulo inicializado con <code>go mod init</code> en <code>go-website-tutorial</code>.</li>
+        <li><strong>Framework:</strong> Gin instalado con <code>go get -u github.com/gin-gonic/gin</code>.</li>
+        <li><strong>Servidor local:</strong> ejecutando con <code>go run main.go</code> en <code>http://localhost:8080</code>.</li>
+      </ul>
+    </section>
+
+    <section id="paso1" class="mb-5">
+      <h2>Resumen del Paso 1: Inicialización y Configuración Básica</h2>
+      <ol>
+        <li><strong>Entorno:</strong> Git, Go y VS Code configurados.</li>
+        <li><strong>Repositorio:</strong> creado y sincronizado con GitHub (<a href="https://github.com/michelbr84/go-website-tutorial">link</a>).</li>
+        <li><strong>Código:</strong> archivo <code>main.go</code> con ruta básica y servidor funcional.</li>
+        <li><strong>Servidor:</strong> probado exitosamente en entorno local.</li>
+        <li><strong>Publicación:</strong> versión inicial publicada con GitHub Pages.</li>
+      </ol>
+      <p><em>Este paso ha sido finalizado. Se conservará como una etapa independiente. Las siguientes etapas se desarrollarán por separado sin sobrescribir esta.</em></p>
+    </section>
+
+    <footer class="mt-4 mb-4">
+      <p class="text-center text-muted">Paso 1 completado – &copy; 2025 go-website-tutorial.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

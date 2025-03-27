@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{.title}} - Step 1 Completed</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding-top: 70px; }
+    .container { max-width: 900px; }
+  </style>
+</head>
+<body>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/?lang=en">{{.title}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#objective">Objective</a></li>
+          <li class="nav-item"><a class="nav-link" href="#documentation">Documentation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#step1">Step 1 Completed</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/?lang=en">English</a></li>
+          <li class="nav-item"><a class="nav-link" href="/?lang=pt">Português</a></li>
+          <li class="nav-item"><a class="nav-link" href="/?lang=es">Español</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <header class="mb-4">
+      <h1 class="display-4">{{.title}}</h1>
+      <p class="lead">
+        A step-by-step tutorial to build and publish a multilingual website with Go (Golang) for free using GitHub Pages.
+      </p>
+      <p>This site is open source. <a href="https://github.com/michelbr84/go-website-tutorial">Improve this page.</a></p>
+    </header>
+
+    <!-- Objective Section -->
+    <section id="objective" class="mb-5">
+      <h2>Project Objective</h2>
+      <p>This project aims to create a website using the Go programming language. The website serves as a 10-step tutorial to build and publish a website on GitHub for free, using this very site as an example.</p>
+      <ol>
+        <li>Create a 10-step tutorial on building and publishing a website with Go via GitHub, free of charge.</li>
+        <li>Target users interested in learning to create websites with Go, available in English, Spanish, and Portuguese.</li>
+        <li>The tutorial also guides users on implementing or creating a visual identity, since the company lacks one.</li>
+        <li>The site's functionality is to present a step-by-step tutorial where each stage is published and reviewed individually.</li>
+        <li>Users can view each completed stage on separate pages showing the results of that particular process.</li>
+        <li>The project will be released in 10 stages, with each stage published until the complete website is finished.</li>
+        <li>After the 10th stage, the content will initially not be updated.</li>
+        <li>The site must be optimized for search engines (SEO).</li>
+        <li>No integration with existing company systems is required.</li>
+        <li>Everything must be done for free, with the only investment being time.</li>
+      </ol>
+      <p>At the end of each stage, the GitHub repository will be updated and the website published as-is, resulting in 10 semi-complete versions until the final version is released.</p>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="mb-5">
+      <h2>Initial Documentation for the Go Website Project</h2>
+      <p>This document guides Windows 11 users through all necessary steps and software required to start developing your website using Go (Golang), assuming no tools are installed initially.</p>
+      <!-- (Include documentation details as in previous version) -->
+      <h3>1. Create a GitHub Account</h3>
+      <ul>
+        <li>Go to <a href="https://github.com/">github.com</a> and click "Sign up".</li>
+        <li>Fill in your details (email, password, and username: <strong>michelbr84</strong>).</li>
+        <li>Confirm your email.</li>
+      </ul>
+      <!-- ... Additional steps follow similarly ... -->
+    </section>
+
+    <!-- Step 1 Completed Section -->
+    <section id="step1" class="mb-5">
+      <h2>Step 1 Completed: Initialization and Basic Configuration</h2>
+      <ol>
+        <li>
+          <strong>Environment Setup:</strong>
+          <ul>
+            <li>GitHub account created (username: <strong>michelbr84</strong>).</li>
+            <li>Git, Go, and VS Code installed and configured.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Repository Creation and Initialization:</strong>
+          <ul>
+            <li>GitHub repository <strong>go-website-tutorial</strong> created.</li>
+            <li>Initial files added: README, .gitignore, go.mod, go.sum, and main.go.</li>
+            <li>Local repository synchronized with GitHub.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Initial Code Developed:</strong>
+          <ul>
+            <li><code>main.go</code> created using the Gin framework.</li>
+            <li>Server tested locally at <code>http://localhost:8080</code>.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Versioning and Publication:</strong>
+          <ul>
+            <li>Initial commit made and pushed to the GitHub repository.</li>
+            <li>GitHub Pages configured to publish the initial version.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Dissemination:</strong>
+          <ul>
+            <li>The initial version of the site is available for public access and promotion.</li>
+          </ul>
+        </li>
+      </ol>
+      <p><em>Note: This is the completed Step 1. In the GitHub repository, this part will be maintained as a separate, finalized stage. Future stages will be developed as distinct sections or folders, ensuring that Step 1 remains unchanged.</em></p>
+    </section>
+
+    <footer class="mt-4 mb-4">
+      <p class="text-center text-muted">&copy; 2025 go-website-tutorial. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
