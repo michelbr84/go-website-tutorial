@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Go Website Tutorial - Step 2: Multilingual Support</title>
+  <title>Go Website Tutorial - Steps 1 and 2</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <style>
     body { padding-top: 70px; }
@@ -23,12 +23,29 @@
   </nav>
 
   <div class="container mt-5">
-    <h1>Step 2: Multilingual Support</h1>
-    <p>This page is dynamically translated using Go.</p>
+    <h1 class="mb-4">Step 1: Initialization and Setup</h1>
+    <p>This project is a step-by-step tutorial for building and publishing a multilingual website using Go (Golang), hosted for free on GitHub Pages.</p>
+    <ol>
+      <li>Git, Go and VS Code installed</li>
+      <li>GitHub account created (michelbr84)</li>
+      <li>Project initialized and pushed to GitHub</li>
+      <li>Basic static version created and published</li>
+    </ol>
+
+    <h2 class="mt-5">Step 2: Multilingual Support</h2>
+    <p>We implemented dynamic i18n in Go, then rendered static pages for each language to support GitHub Pages publishing.</p>
+    <ul>
+      <li>Translations defined in a Go map</li>
+      <li>One HTML template used with dynamic placeholders</li>
+      <li>Static files generated for English, Portuguese, and Spanish</li>
+      <li>Language switcher implemented with static links</li>
+    </ul>
+
+    <p class="mt-4">This is the English version of the site. You can switch languages using the buttons above.</p>
   </div>
 
   <footer class="text-center mt-5 mb-3 text-muted">
-    Step 2 – Multilingual Support – &copy; 2025 go-website-tutorial.
+    Steps 1 and 2 completed – &copy; 2025 go-website-tutorial.
   </footer>
 </body>
 </html>
